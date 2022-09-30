@@ -84,27 +84,6 @@ public class CustomerServiceImpl implements CustomerService {
 
 	}
 
-	@Transactional
-	public List<Customer> searchBy(String firstname, String email) {
-
-		
-		Transaction tx = session.beginTransaction();
-		String query = "";
-		if (firstname.length() != 0 && email.length() != 0)
-			query = "from Customer where firstname like '%" + firstname + "%' or email like '%" + email + "%'";
-		else if (firstname.length() != 0)
-			query = "from Customer where firstname like '%" + firstname + "%'";
-		else if (email.length() != 0)
-			query = "from Customer where email like '%" + email + "%'";
-		else
-			System.out.println("Cannot search without input data");
-
-		List<Customer> customer = session.createQuery(query).list();
-
-		tx.commit();
-
-		return customer;
-	}
 
 	@Transactional
 	public void print(List<Customer> customer) {

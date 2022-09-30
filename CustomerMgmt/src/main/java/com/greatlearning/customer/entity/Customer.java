@@ -70,43 +70,6 @@ public class Customer {
 		this.email = email;
 	}
 
-	
-
-//	public int getId() {
-//		return id;
-//	}
-//
-//	public void setId(int id) {
-//		this.id = id;
-//	}
-//
-//	public String getfirstname() {
-//		return firstname;
-//	}
-//
-//	public void setfirstname(String firstname) {
-//		this.firstname = firstname;
-//	}
-//
-//	public String getlastname() {
-//		return lastname;
-//	}
-//
-//	public void setlastname(String lastname) {
-//		this.lastname = lastname;
-//	}
-//
-//	public String getemail() {
-//		return email;
-//	}
-//
-//	public void setemail(String email) {
-//		this.email = email;
-//	}
-//
-//	public Customer() {
-//
-//	}
 
 
 	@Override

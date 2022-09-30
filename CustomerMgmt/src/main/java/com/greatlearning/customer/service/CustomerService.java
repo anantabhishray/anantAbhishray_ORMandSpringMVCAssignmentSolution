@@ -13,6 +13,4 @@ public interface CustomerService {
 
 	public void deleteById(int theId);
 
-	public List<Customer> searchBy(String firstname, String author);
-
 }
